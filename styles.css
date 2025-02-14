@@ -1,0 +1,89 @@
+
+body{
+    font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+  }
+
+.game-container{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-container{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+
+.row{
+    height: 100px;
+}
+
+.cell{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    font-size: xx-large;
+}
+
+.cell:hover{
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+
+.disabled:hover {
+    background-color: white;
+    cursor: auto;
+}
+
+#reset-button:hover{
+    cursor: pointer;
+}
+
+#row-1, #row-2{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-color: black;
+    border-style: solid;
+}
+
+#row-1, #row-2, #row-3{
+    display: flex;
+}
+
+#cell-11{
+    border-color: black;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.cell-row-1, .cell-row-2, .cell-row-3{
+    border-color: black;
+    border-style: solid;
+    border-left: 0;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+#cell-13, #cell-23, #cell-33{
+    border-right: 0;
+}
+
+#reset-container{
+    margin-top: 30px;
+}
+
+#reset-button{
+    height: 50px;
+    font-size: larger;
+}
